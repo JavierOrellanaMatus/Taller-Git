@@ -2,9 +2,6 @@
 	A) Instalar node.js
 	B) Instalar python
 
--- autorizar app en cuenta giTHub
-vscode://vscode.github-authentication/did-authenticate?windowid=1&code=24b93cc4e4fb9cc13743&state=ec8cd351-bbea-4693-9de5-8439f7a379c2
-
 --ó
 -- Generar SSHKey
 	0) ssh-keygen -o
@@ -125,10 +122,7 @@ the configured default per invocation.
 	19) ejecutar npm install
 	20) 
 	
-	https://github.com/JavierOrellanaMatus
-	JavierOrellanaMatus
-	primeras2020.,1
-	https://github.com/JavierOrellanaMatus/fabrica
+
 	
 	
 
