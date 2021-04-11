@@ -18,8 +18,6 @@
     ssh -T git@github.com
 ssh -T jorellana@MALAMBO
 
-The authenticity of host 'github.com (140.82.112.3)' can't be established.
-RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
 
 -- ver origenes remotos existentes
     git remote -v
