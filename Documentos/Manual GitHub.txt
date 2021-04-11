@@ -1,0 +1,159 @@
+--Prerequisitos
+	A) Instalar node.js
+	B) Instalar python
+
+-- autorizar app en cuenta giTHub
+vscode://vscode.github-authentication/did-authenticate?windowid=1&code=24b93cc4e4fb9cc13743&state=ec8cd351-bbea-4693-9de5-8439f7a379c2
+
+--ó
+-- Generar SSHKey
+	0) ssh-keygen -o
+-- Registar llave publica en Cuenta Git Hub
+
+-- Configura ssh para registrar llave 
+    eval `ssh-agent`
+    echo $SSH_AUTH_SOCK
+
+-- Registra llave en ssh
+    ssh-add /d/Desarrollo-jom/Llaves/id_rsa-Ghub-JOM
+
+-- Validar que la llave ssh está ok.
+    ssh -T git@github.com
+ssh -T jorellana@MALAMBO
+
+The authenticity of host 'github.com (140.82.112.3)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+
+-- ver origenes remotos existentes
+    git remote -v
+
+origin  https://github.com/JavierOrellanaMatus/Taller-Git.git (fetch)
+origin  https://github.com/JavierOrellanaMatus/Taller-Git.git (push)
+
+--
+    git remote set-url origin https://github.com/JavierOrellanaMatus/Taller-Git.git
+
+    
+
+-Clonar repositorio a local 	
+	1) Ubicarse en ruta de trabajo
+	cd D:\Desarrollo\
+	
+	1.1) Inicializar Git
+	git config --global init.defaultBranch main
+	git config --global user.email "javier.orellana.matus@outlook.com"
+	git config --global user.name "JavierOrellanaMatus"
+	git config --global pull.rebase false
+
+	#git config pull.rebase false  # merge (the default strategy)
+    #git config pull.rebase true   # rebase     
+  	#git config pull.ff only       # fast-forward only
+
+You can replace "git config" with "git config --global" to set a default
+preference for all repositories. You can also pass --rebase, --no-rebase,
+or --ff-only on the command line to override 
+the configured default per invocation.
+
+
+	1.2) Git init 
+		
+	1.3) Ver las configuraciones del Git
+
+		git config --list
+
+	2) Clonar repositorio
+	git clone http://versionador.bancoconsorcio.cl/mantenimientosoporte/FISA_OBJETOS.git
+	
+	3) Ingresar a la ruta 
+	cd D:\Desarrollo\FISA_OBJETOS
+		
+	4) Validar repositorio
+	git status
+	
+	4.1) git log 
+
+	4.2) git branch
+	
+	4.3) 
+
+-Crear rama local a partir de rama actual 
+	5) Crear rama local a partir de rama actual 
+	git checkout -b <nombre_rama_conmiscambios>
+	
+	Nemotecnia
+	Desarrollo_NombreProyecto_Funcionalidad
+	
+	6) Cambiar de rama
+	git checkout <nombre_rama_conmiscambios>
+	
+	7) Agregar todos los archivos con cambios de rama local (Todos los cambios).
+	git add .
+	
+	8) Agregar archivo un cambio con cambios de rama local. 
+	git add <nombre_archivo>
+	
+	8.5) Ver diferencias 
+
+
+	9) Descartar archivo con cambio (ubicado en rama local) 
+	D:\Desarrollo\FISA_OBJETOS> git checkout pkg/fisa_creditos.pkg_con_cf.pks
+	
+	10) Proteger cambios a repositorio (Commit)
+	git commit -m "Titulo|Descripción del cambio"
+	
+-Validar que no hay conflictos de versión 
+	11) Validar que no hay cambios respecto a la rama local
+	git pull origin <nombre_rama_conmiscambios>
+
+	12) Registrar el cambio en repositorio remoto
+	git push origin <nombre_rama_conmiscambios>
+	
+--En caso de conflictos
+	13) Limpiar Codigo
+	14) Repetir paso 10.
+	
+--Incorporar mis cambios a otra rama (rama común desarrollo - Develop).
+	15) Cambiar a rama común Develop (Paso 5)
+	16) Realizar Merge 
+	git merge --no-ff <nombre_rama_conmiscambios>
+	
+	17) Subir cambios a rama (rama común desarrollo - Develop)
+	git push origin <rama_común_desarrollo)
+
+--Versionar con node
+	18) Ubicarse en carpeta de trabajo del proyecto
+	19) ejecutar npm install
+	20) 
+	
+	https://github.com/JavierOrellanaMatus
+	JavierOrellanaMatus
+	primeras2020.,1
+	https://github.com/JavierOrellanaMatus/fabrica
+	
+	
+
+
+…or create a new repository on the command line
+echo "# fabrica" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M master
+git remote add origin https://github.com/JavierOrellanaMatus/fabrica.git
+git push -u origin master
+
+
+…or push an existing repository from the command line
+git remote add origin https://github.com/JavierOrellanaMatus/fabrica.git
+git branch -M master	
+git push -u origin master
+
+..borrar rama
+git branch -D nombre-rama
+
+..deshacer agregación 
+git reset <nombre_archivo>
+
+
+
+ 
