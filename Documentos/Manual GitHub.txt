@@ -16,7 +16,7 @@
 
 -- Validar que la llave ssh está ok.
     ssh -T git@github.com
-ssh -T jorellana@MALAMBO
+    ssh -T jorellana@MALAMBO
 
 
 -- ver origenes remotos existentes
@@ -88,7 +88,7 @@ the configured default per invocation.
 	git add <nombre_archivo>
 	
 	8.5) Ver diferencias 
-
+    git diff  
 
 	9) Descartar archivo con cambio (ubicado en rama local) 
 	D:\Desarrollo\FISA_OBJETOS> git checkout pkg/fisa_creditos.pkg_con_cf.pks
@@ -139,6 +139,9 @@ git push -u origin master
 git remote add origin https://github.com/JavierOrellanaMatus/fabrica.git
 git branch -M master	
 git push -u origin master
+
+-- Listar ramas 
+git branch -a
 
 ..borrar rama
 git branch -D nombre-rama
