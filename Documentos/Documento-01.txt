@@ -8,4 +8,10 @@ Esta es una prueba del quinto cambio.
 =======
 Esta es una prueba del cuarto cambio.
 
+<<<<<<< HEAD
+>>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
+=======
+--cambio 20210412-22:12
+Esta es una prueba del cuarto cambio.
+
 >>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
