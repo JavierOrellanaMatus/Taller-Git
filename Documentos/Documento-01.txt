@@ -4,3 +4,6 @@ Esta es una prueba del primer cambio.
 Esta es una prueba del segundo cambio.
 Esta es una prueba del tercer cambio.
 
+--cambio 20210412-22:12
+Esta es una prueba del cuarto cambio.
+
