@@ -1,0 +1,19 @@
+diff a/Documentos/Manual GitHub.txt b/Documentos/Manual GitHub.txt	(rejected hunks)
+@@ -51,10 +51,17 @@
+ --  Crear Repositorio local 
+ 1.- Ubicarse en ruta de trabajo
+ 	cd D:\Desarrollo\
++<<<<<<< HEAD
+ 
+ 2.- Clonar repositorio
+ 	git clone https://github.com/JavierOrellanaMatus/Taller-Git.git 
+ 
++=======
++
++2.- Clonar repositorio
++	git clone https://github.com/JavierOrellanaMatus/Taller-Git.git 
++
++>>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
+     …o Crear nuevo repositorio con archivo dummie
+     echo "# fabrica" >> README.md
+     git init

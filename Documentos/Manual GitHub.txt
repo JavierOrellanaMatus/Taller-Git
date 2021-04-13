@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
 --Prerequisitos para Front
 	A) Instalar node.js
 
@@ -51,17 +47,10 @@
 --  Crear Repositorio local 
 1.- Ubicarse en ruta de trabajo
 	cd D:\Desarrollo\
-<<<<<<< HEAD
 
 2.- Clonar repositorio
 	git clone https://github.com/JavierOrellanaMatus/Taller-Git.git 
 
-=======
-
-2.- Clonar repositorio
-	git clone https://github.com/JavierOrellanaMatus/Taller-Git.git 
-
->>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
     …o Crear nuevo repositorio con archivo dummie
     echo "# fabrica" >> README.md
     git init
@@ -141,8 +130,4 @@
 
 -- Deshacer agregación 
 1.- Ubicarse en rama master
-<<<<<<< HEAD
     git reset <nombre_archivo>
-=======
-    git reset <nombre_archivo>
->>>>>>> Desarrollo-ProyectoA-Funcionalidad-01
