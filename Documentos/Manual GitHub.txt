@@ -23,6 +23,12 @@
     ssh -T git@github.com
     vi  ~/.ssh/known_hosts
 
+4.1.- Para hacer Push se puede instalar GCM
+    brew tap microsoft/git
+    brew install --cask git-credential-manager-core
+    brew upgrade git-credential-manager-core
+    brew uninstall --cask git-credential-manager-core
+
 5.- Registar llave publica en Cuenta Git Hub.
 
 -- Configurar entorno Git
