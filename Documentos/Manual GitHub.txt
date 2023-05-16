@@ -14,9 +14,14 @@
 
 3.- Registra llave en ssh
     ssh-add /d/Desarrollo-jom/Llaves/id_rsa-Ghub-JOM
+    ssh-add /Users/a1234/.ssh/id_rsa
 
 4.- Validar que la llave ssh está ok.
     ssh -T jorellana@MALAMBO
+    ssh -T a1234@MacBook-Air-de-1234.local
+           a1234@MacBook-Air-de-1234.local
+    ssh -T git@github.com
+    vi  ~/.ssh/known_hosts
 
 5.- Registar llave publica en Cuenta Git Hub.
 
@@ -43,6 +48,17 @@
     #the configured default per invocation.
 
 
++-------------------
+Instalar GitHubCli
+
+brew install gh
+brew upgrade gh
+
+gh pr status
+gh auth login
+Git 
+
++-------------------
 
 --  Crear Repositorio local 
 1.- Ubicarse en ruta de trabajo
