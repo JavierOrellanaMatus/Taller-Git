@@ -153,3 +153,5 @@ Git
 -- Deshacer agregación 
 1.- Ubicarse en rama master
     git reset <nombre_archivo>
+
+Este Archivo cambiará mucho dentro de poco
